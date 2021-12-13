@@ -1,0 +1,35 @@
+body {
+    header {
+        display: flex;
+        justify-content: center;
+
+        p {
+            display: inline-block;
+        }
+
+        button {
+            -webkit-appearance: none;
+            border: none;
+            border-radius: 30px;
+            outline: none;
+            position: relative;
+            height: 26px;
+            width: 45px;
+        }
+
+        button:before {
+            width: 43%;
+            height: 76%;
+            border-radius: 30px;
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translate(0, -50%);
+            transition: 0.5s;
+        }
+
+        button.active:before {
+            left: 6.5%;
+        }
+    }
+}

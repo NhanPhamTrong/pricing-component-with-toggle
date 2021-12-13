@@ -1,0 +1,41 @@
+body {
+    main.container {
+        width: 70%;
+
+        .row {
+            display: flex;
+            align-items: center;
+
+            .col-12 {
+                padding: 0;
+
+                .card {
+                    padding: 0;
+                    border: none;
+                    border-radius: 15px;
+
+                    .card-body {
+                        p {
+                            font-size: 4rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            span {
+                                font-size: 2.5rem;
+                            }
+                        }
+                    }
+                }
+
+                .card.professional {        
+                    .card-footer {
+                        button {
+                            background-image: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
